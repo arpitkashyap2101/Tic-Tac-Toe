@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+</style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: rgba(13, 5, 60, 0.823);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+nav ul{
+    list-style-type: None;
+
+    
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(147, 109, 183);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+   
+
+}
+#cursor-blur{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(205, 166, 243);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    filter: blur(30px);
+
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  
+
+}
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.box:hover{
+    background-color: rgba(126, 69, 179, 0.911);
+}
+.gameinfo{
+    padding: 0 34px;
+    font-family: font-family: 'Open Sans', sans-serif;
+
+}
+.info{
+    font-size: 25px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset {
+    margin: 0 33px;
+    padding: 1px 18px;
+    background: #d7abed;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
